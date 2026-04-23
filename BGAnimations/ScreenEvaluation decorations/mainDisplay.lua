@@ -1490,26 +1490,26 @@ t[#t + 1] = Def.Sound {
             -- quint is 1, then they go in thress from aaaa to a, and b/c/d/f are one grade (Grade_Failed is f)
 
             if score:GetWifeGrade() == "Grade_Tier01" then
-                self:load(THEME:GetPathS("applause", "aaaaa"))
+                self:load(THEME:GetPathS("applause", "quint"))
             elseif score:GetWifeGrade() == "Grade_Tier02" or "Grade_Tier03" or "Grade_Tier04" then
-                self:load(THEME:GetPathS("applause", "aaaa"))
+                self:load(THEME:GetPathS("applause", "quad"))
             elseif score:GetWifeGrade() == "Grade_Tier05" or "Grade_Tier06" or "Grade_Tier07" then
-                self:load(THEME:GetPathS("applause", "aaa"))
+                self:load(THEME:GetPathS("applause", "tri"))
             elseif score:GetWifeGrade() == "Grade_Tier08" or "Grade_Tier09" or "Grade_Tier10" then
-                self:load(THEME:GetPathS("applause", "aa"))
+                self:load(THEME:GetPathS("applause", "di"))
             elseif score:GetWifeGrade() == "Grade_Tier11" or "Grade_Tier12" or "Grade_Tier13" then
-                self:load(THEME:GetPathS("applause", "a"))
+                self:load(THEME:GetPathS("applause", "mono"))
             elseif score:GetWifeGrade() == "Grade_Tier14" then
                 self:load(THEME:GetPathS("applause", "ng"))
             elseif score:GetWifeGrade() == "Grade_Tier15" then
                 self:load(THEME:GetPathS("applause", "ng"))
             elseif score:GetWifeGrade() == "Grade_Tier16" then
                 self:load(THEME:GetPathS("applause", "ng"))
-            else score:GetWifeGrade() == "Grade_Failed" then
-                self:load(THEME:GetPathS("applause", "f"))
+            else
+                self:load(THEME:GetPathS("applause", "fail"))
             end
             self:play()
-        end,
+        end
 }
 
 return t

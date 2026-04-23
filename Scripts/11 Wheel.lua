@@ -26,6 +26,9 @@ local forceGroupCheck = false
 local diffSelection = 1 -- index of the selected chart
 local enteringSong = false
 
+-- my personal variables
+-- local hoveringGroupCheck = getIndexCircularly()
+
 -- sounds (actors)
 local SOUND_MOVE = nil
 local SOUND_SELECT = nil
@@ -615,6 +618,9 @@ function Wheel:new(params)
             Precache = true,
             IsAction = true,
             InitCommand = function(self) SOUND_SELECT = self end,
+        },
+        Def.Sound {
+            Name = "GroupExpandSound"
         }
     }
     setmetatable(whee, {__index = Wheel.mt})

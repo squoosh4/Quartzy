@@ -5,7 +5,7 @@ t[#t+1] = LoadActor("mainDisplay") -- the primary score screen assets
 -- thank you jole for sliding me your code for this
 -- get_music_file_length(THEME:GetPathS("", "namehere")) is something id need if i implement shit with midgrades
 
-t[#t + 1] = Def.Sound {
+t[#t+2] = Def.Sound {
         OnCommand = function(self)
         local score = SCOREMAN:GetMostRecentScore()
             

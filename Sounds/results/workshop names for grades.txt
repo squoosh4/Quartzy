@@ -1,0 +1,23 @@
+aaaaa: unbreakable
+ aaaa: 
+  aaa: enlightened
+   aa: crystalline
+    a: cracked
+    b: chipped
+    c: chipped
+    d: chipped
+    f: shattered
+
+
+midgrade system 1
+
+grade: : [name]!
+grade. : [name].
+grade  : [name]...
+
+
+midgrade system 2
+
+grade: : [name]+
+grade. : [name]•
+grade  : [name]-

@@ -6,6 +6,7 @@
         "activityBar.inactiveForeground": "#066E0A",
         "activityBarBadge.foreground": "#000607",
         "activityBarBadge.background": "#4DC7DE",
+<<<<<<< Updated upstream
         "statusBar.foreground": "#98FFD6",
         "statusBar.background": "#0E8354",
         "statusBarItem.hoverBackground": "#175756",
@@ -24,6 +25,15 @@
         "statusBarItem.remoteBackground": "#0F8547",
         "statusBar.debuggingForeground": "#000000",
         "statusBar.debuggingBackground": "#65B744"
+>>>>>>> Stashed changes
+=======
+        "statusBar.foreground": "#FFD5DD",
+        "statusBar.background": "#A6374C",
+        "statusBarItem.hoverBackground": "#6B3526",
+        "statusBarItem.remoteForeground": "#FFD59E",
+        "statusBarItem.remoteBackground": "#865311",
+        "statusBar.debuggingForeground": "#1E0006",
+        "statusBar.debuggingBackground": "#DD6D83"
 >>>>>>> Stashed changes
     }
 }

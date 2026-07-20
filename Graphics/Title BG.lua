@@ -1,6 +1,7 @@
 -- the grid image we are using is 200x200
 -- determine how many images we need to load to cover the screen
 local adjustedsize = 200 / 1080 * SCREEN_HEIGHT
+local background_pattern = "lapis"
 
 -- adding 1 to these counts for the moving background stuff, give us more room to work with
 local verticalcount = math.ceil(SCREEN_HEIGHT / adjustedsize) + 1
@@ -15,7 +16,7 @@ local function bgCheckerBoard()
         for j = 1, horizontalcount do
             d[#d+1] = Def.Sprite {
                 Name = "BGCheckerboard_"..i.."_"..j,
-                Texture = THEME:GetPathG("", "bg-pattern"),
+                Texture = THEME:GetPathG("", "background_patterns/" .. background_pattern),
                 InitCommand = function(self)
                     self:halign(0):valign(0)
                     self:xy((j-1) * adjustedsize, (i-1) * adjustedsize)

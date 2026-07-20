@@ -105,6 +105,7 @@ local defaultConfig = {
         UpdateText = "#efc57b",
         ProfileBackground = "#000000",
         Separator = "#ffffff",
+        Selector = "#000000",
         UnderlayBackground = "#333333",
         LogoE = "#ffffff",
         LogoTriangle = "#805faf",

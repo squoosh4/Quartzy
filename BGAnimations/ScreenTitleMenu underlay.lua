@@ -352,6 +352,7 @@ t[#t+1] = Def.ActorFrame {
             self:halign(0)
             self:zoomto(selectorWidth, selectorHeight)
             self:queuecommand("UpdateWidth")
+            registerActorToColorConfigElement(self, "title", "Selector")
         end,
         UpdateWidthCommand = function(self)
             -- the minimum width is going to be about 10% longer than the longest choice text
